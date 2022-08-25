@@ -11,12 +11,46 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
-    We're coming soon Hello fellow shoppers! We're currently building our new
-    fashion store. Add your email below to stay up-to-date with announcements
-    and our launch deals. Email Address
+    <main>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Brand logo" />
+      </div>
+      <div class="wrapper">
+        <picture class="main-img">
+          <source
+            media="(max-width: 768px)"
+            srcset="./images/hero-mobile.jpg"
+            alt="Mobile image"
+          />
+          <source
+            media="(min-width: 767px)"
+            srcset="./images/hero-desktop.jpg"
+            alt="Desktop image"
+          />
+          <img src="./images/hero-desktop.jpg" alt="Desktop image" />
+        </picture>
+        <div class="content-wrapper">
+          <h1>We're coming soon</h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="/action_page.php">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="Email Addresse"
+            />
+            <input type="submit" value=">" />
+          </form>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
